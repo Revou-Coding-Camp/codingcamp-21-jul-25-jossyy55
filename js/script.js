@@ -91,3 +91,7 @@ function rendertasks(tasksToRender = tasks) {
         tasklist.appendChild(li);
     });
 }
+
+function changeBackground(color) {
+    document.body.style.backgroundColor = color;
+}
