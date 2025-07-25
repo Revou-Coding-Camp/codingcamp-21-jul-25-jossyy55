@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main>
+
+        <!-- Judul -->
+        <header>
+            <h1 class="text-3x1 font-bold">To Do List</h1>
+        </header>
+
+        <!-- Form Add To Do -->
+        <form>
+            </div>
+            <div>
+                <label for="Todo-input" class="block text-sm font-medium text-gray-700">Add Task</label>
+                <input type="text" id="Todo-input" name="task" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" placeholder="Enter your task here">
+            </div>
+
+            <div>
+                <label for="Todo-input" class="block text-sm font-medium text-gray-700">Date</label>
+                <input type="date" id="date-input" name="dueDate" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+            </div>
+
+            <div>
+                <button type="button" class="px-[26px] py-[4px] rounded-[8px] bg-blue-500" onclick="addTask();">+</button>
+            </div>
+        </form>
+
+        <!-- List To Do -->
+         <section>
+            <div class="action-container pt-[16px] pb-[16px]">
+                <button class="border px-[26px] py-[4px] rounded-[8px] bg-blue-500 text-white">Filter</button>
+                <button type="button" class="border px-[26px] py-[4px] rounded-[8px] bg-red-500 text-white" onclick="removeAllTasks();">Delete All</button>
+            </div>
+
+            <header>
+                <h2 class="text-3xl font-bold mt-4">List</h2>
+            </header>
+
+            <div id="todo-list">
+                <li class="to-do item flex justify-between items-center bg-white p-4 mb-2">
+                    <span>Sample Task</span>
+                     <div>
+                        <button class="px-[10px] py-[2px] bg-green-500 bg-blue-500 text-white rounded-md">Edit</button>
+                        <button class="px-[10px] py-[2px] bg-red-500 bg-red-500 text-white rounded-md">Delete</button>
+                     </div>
+                </li>
+            </div>
+         </section> 
+
+        <script src="js\script.js"></script>
+    </main>
+</body>
+</html>
